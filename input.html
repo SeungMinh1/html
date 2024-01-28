@@ -11,5 +11,23 @@
         <input type="color"/> <br><br>
         <input type="range" max="100" min="0" stp="10"/> <br><br>
         <input type="date"/> <br><br>
+        <select name="pet" title="카페선택">
+            <option value="starbucks">스타벅스</option>
+            <option>이디야</option>
+            <option>루시드</option>
+            <option>커피빈</option>
+        </select> <br><br><br>
+        <textarea rows="10" cols="15">입력하시오...</textarea>
+        <br><br><br>
+        <form action="exam.php" methond="POST">
+            <input type="text" placeholder="아이디" name="name1"><br>
+            <select name="pet">
+                <option value="starbucks">스타벅스</option>
+                <option value="cat">이디야</option>
+                <option value="dog">루시드</option>
+                <option>커피빈</option>
+            </select><br>
+            <input type="submit" value="전송">
+        </form>
     </body>
 </html>
