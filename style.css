@@ -1,0 +1,11 @@
+p{
+    color:red;
+    font-size: 32px;
+}
+/*
+id = # id
+class = .class
+all = *
+group 선택 = h1, p{}
+tag (p, h1 등) = 그냥 p, h1{}
+*/
