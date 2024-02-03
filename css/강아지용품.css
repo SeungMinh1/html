@@ -12,7 +12,7 @@ header img{
     width: 200px; height: 100px;
 }
 nav{
-    float: right;
+    
     
 }
 nav ul{
@@ -22,8 +22,7 @@ nav ul{
 nav li{
     list-style-type: none;
     display: inline-block;
-    padding-top: 25px;
-   padding-right: 20px;
+ 
 }
 nav a{
     text-decoration: none;
@@ -31,4 +30,30 @@ nav a{
 }
 section{
     background-color: rgb(218, 210, 210);
+    width: 650px;
+    float: left;
+}
+article{
+    border: 1px solid black;
+    width: 280px;
+    height: 300px;
+    padding: 10px;
+    display: inline-block;
+}
+aside{
+    float: right;
+    background-color: beige;
+    width: 300px;
+}
+aside img{
+    width: 180px; height: 430px;
+}
+
+footer{
+    background-color: rgb(68, 196, 153);
+    clear: both;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
