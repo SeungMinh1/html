@@ -1,4 +1,60 @@
 #container{
     width: 960px;
     margin: 0 auto;
+    border: 1px  solid black;
+}
+header{
+    background-color: violet;
+    overflow: hidden;
+    padding: 10px;
+}
+header h1{
+    margin-top: 0;
+    color: white;
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+header nav{
+    float: right;
+    padding: 10px;
+    
+}
+header li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 15px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+section {
+    background-color: beige;
+    width: 940px;
+    height: 800px;
+    padding: 10px;
+}
+section article{
+    border: 1px solid black;
+    float: left;
+    width: 290px;
+    margin: 10px;
+    text-align: justify;
+}
+#art4{
+    width: 920px;
+}
+article img{
+    float: right;
+}
+
+footer{
+    background-color: aquamarine;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    clear: both;
 }
