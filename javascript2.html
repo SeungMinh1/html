@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>반복문</title>
+    </head>
+    <body>
+        <h1>반복문</h1>
+        <script>
+            // let n = 5;
+            // let star =''
+            // for(let i=0; i<n; i++){
+            //     for(let k=0; k<n-i; k++){
+            //         star +=' ';
+            //     }
+            //     for(let j=0; j<=i; j++){
+            //         star += '*';
+            //     }
+            //     star += '\n';
+            // }
+            // console.log(star);
+            let n = 5;
+            let r = 9;
+            let star =''
+            for(let i = 1; i<=n; i++){  4321
+                let h = 2*i -1;
+                for(let j=1; j<=(r-h)/2; j++){
+                    star += ' ';
+                }
+                for(let k=1; k<=2*i-1; k++){
+                    star += '*';
+                }
+                star += '\n';
+            }
+            let n2 = 4;
+            for(let i =1; i<=n2; i++){
+
+                for(let j =1; j<=i; j++){
+                    star += ' ';
+                }
+                for(let k =1; k<=(r-2*i); k++){
+                    star += '*';
+                }
+                star += '\n';
+            }
+            console.log(star);
+
+
+            // do{
+            //     console.log('반복할꺼');
+            // }while(i<5)
+            
+        </script>
+    </body>
+</html>
