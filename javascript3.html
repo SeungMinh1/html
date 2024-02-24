@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>자바스크립트</title>
+    </head>
+    <body>
+        <h1>함수</h1>
+        <input type="button" id="push" value="PUSH">
+        <input type="button" id="one" value="PUSH">
+        <input type="button" id="two" value="PUSH">
+        <input type="button" id="three" value="PUSH">
+        <script>
+           const inputClick = document.querySelector("#push")  // 스크립트의 id와 연결 
+
+            const handleClick = function(){
+                console.log("클릭중");
+            }
+            inputClick.onclick = handleClick
+            
+            const btn1 = document.getElementById("one")
+            const btn2 = document.getElementById("two")
+            const btn3 = document.getElementById("three")
+
+            const handleClick1 = function(){
+                console.log("저를 클릭했냐?")
+            }
+            btn2.addEventListener('click', handleClick1);
+            btn2.addEventListener('click', function(){
+                console.log("다른 핸들러 추가")
+            });
+            btn2.removeEventListener('click', handleClick1);
+
+
+        </script>
+    </body>
+</html>
