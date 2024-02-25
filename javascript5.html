@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>타이머 setTimeout</title>
+        <style>
+            .text{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>타이머</h1>
+        <input type="button" id="stop" value="stop">
+        <!-- ////////////////////////////////////// -->
+        <br><br><br><br><br><br>
+        <h1 id="classh">클래스 리스트</h1>
+        <input type="button" id="addb"value="add">
+        <input type="button" id="removeb"value="remove">
+        <input type="button" id="toggleb"value="toggle">
+        <script>
+            const button = document.getElementById("stop");
+
+            setTimeout(function(){
+                console.log(1234)
+            }, 1000)
+
+            let inter
+            inter = setInterval(function(){
+                console.log("hello")
+            }, 1000)
+
+            button.addEventListener('click', function(){
+                clearInterval(inter)
+            })
+            /////////////////////////////////////////////////////
+            const h1b = document.getElementById("classh")
+            const addbtn = document.getElementById("addb")
+            const removeb = document.getElementById("removeb")
+            const toggleb = document.getElementById("toggleb")
+
+            addbtn.addEventListener("click", function(){
+                h1b.classList.add('text')
+            })
+            removeb.addEventListener("click", function(){
+                h1b.classList.remove('text')
+            })
+            toggleb.addEventListener("click", function(){
+                h1b.classList.toggle('text')
+            })
+
+        </script>
+        </script>
+    </body>
+</html>

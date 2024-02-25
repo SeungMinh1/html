@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>createElement와 appendchild</h1>
+        <input type="button" id="push" value="push">
+        <div id="area"></div>
+        <br><br><br>
+        <input type="button" id="button2" value="push"> <br><br><br><br><br><br>
+        <form>
+            <input type="text" id="name" placeholder="이름">
+            <input type="text" id="town" placeholder="동네">
+            <!-- <input type="button" id="button2" value="push"> -->
+            <input type="submit" value="PUSH">
+        </form>
+        
+
+        <script>
+            // event append
+            let button = document.getElementById("push")  //html 버튼과 연결
+            let div = document.getElementById("area")
+            button.addEventListener('click', function(){  //클릭 이벤트 발생시
+                console.log("div 추가!");
+                const newdiv = document.createElement("div")  //새로운 div생성
+
+                newdiv.style.backgroundColor = 'red'
+                newdiv.style.width = "200px"
+                newdiv.style.height = "200px"
+
+                div.appendChild(newdiv)  // append는 비슷하지만 문자열도 추가가능
+                                        //반환값은 없음(appendchild는 반환가능)
+            })
+
+            // 22 value preventDefault
+            const textInput = document.getElementById("text")
+            const button2 = document.getElementById('button2')
+
+            button2.addEventListener('click', function(){
+                console.log(textInput.value)
+            })
+
+            const form = document.querySelector("form")
+            
+            form.addEventListener("submit", function(e){
+                e.preventDefault()  //form action이 없어서 기능 차단해둠
+                console.log(form.name.value)
+                console.log(form.town.value)
+            })
+
+        </script> 
+    </body>
+</html>
